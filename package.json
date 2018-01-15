@@ -1,0 +1,27 @@
+{
+  "name": "betterWeb",
+  "version": "1.0.0",
+  "description": "Markup for betterWeb",
+  "scripts": {
+    "start:dev": "webpack-dev-server --config ./configs/webpack.config.js",
+    "webpack": "webpack --config ./configs/webpack.config.js",
+    "webpack:watch": "webpack --watch --config ./configs/webpack.config.js"
+  },
+  "author": "Oleksii Aleksandrov <oleksii.aleksandrov@valor-software.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:EvilAlexei/betterWeb.git"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.17",
+    "css-loader": "^0.28.8",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.10.1"
+  },
+  "dependencies": {}
+}
