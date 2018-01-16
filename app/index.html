@@ -15,45 +15,60 @@
   <body>
     <div id="wrapper" class="container-fluid">
       <div class="row flex-xl-nowrap h-100">
+        <!-- side-menu start -->
         <div class="side-menu">
           <div class="logo"><a href="#">BetterWeb logo</a></div>
-          <button type="button" role="button" class="elements-panel-toggle">Toggle elements panel</button>
+          <button type="button" aria-label="Toggle" class="elements-panel-toggle">+</button>
         </div>
+        <!-- side-menu end -->
 
         <div class="container-fluid">
           <div class="row flex-nowrap h-100">
+            <!-- content start -->
             <section id="content" class="col-9 col-md-9 col-xl-10 h-100">
-              <div class="top-bar">
-                <div class="pull-left">
-                  <p class="page-name">Page: page name</p>
-
-                  <div class="actions">
-                    <button type="button" role="button" class="btn step-back">Back</button>
-                    <button type="button" role="button" class="btn step-forward">Forward</button>
+              <!-- top-bar start -->
+              <div class="top-bar d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-start align-items-center">
+                  <p class="page-name mb-0">Page: page name</p>
+                  <div class="actions ml-3">
+                    <button type="button" aria-label="Step back" class="step-back text-hide">Step back</button>
+                    <button type="button" aria-label="Step forward" class="step-forward text-hide">Step forward</button>
                   </div>
                 </div>
 
-                <div class="pull-center">
+                <div class="">
                   <div class="screen-types">
-                    <button type="button" role="button">Desktop</button>
-                    <button type="button" role="button">Table</button>
-                    <button type="button" role="button">Mobile landscape</button>
-                    <button type="button" role="button">Mobile portrait</button>
+                    <button type="button" role="button" class="active">
+                      <img src="./images/android-desktop.svg" alt="desktop view">
+                    </button>
+                    <button type="button" role="button">
+                      <img src="./images/ipad.svg" alt="tablet view">
+                    </button>
+                    <button type="button" role="button">
+                      <img src="./images/android-phone-landscape.svg" alt="landscape view">
+                    </button>
+                    <button type="button" role="button">
+                      <img src="./images/android-phone-portrait.svg" alt="portrait view">
+                    </button>
                   </div>
                 </div>
 
-                <div class="pull-right">
+                <div class="">
                   <div class="options">
-                    <button type="button" role="button">Preview</button>
-                    <button type="button" role="button">Export</button>
-                    <button type="button" role="button">Publish</button>
+                    <button type="button" aria-label="Preview" class="btn">Preview</button>
+                    <button type="button" aria-label="Export" class="btn">Export</button>
+                    <button type="button" aria-label="Publish" class="btn">Publish</button>
                   </div>
                 </div>
               </div>
+              <!-- top-bar end -->
 
               <div class="row flex-nowrap">
+                <!-- elements-panel start -->
                 <div class="col-3 col-md-3 col-xl-2 elements-panel">
-                  <button type="button" role="button" class="close">Close panel</button>
+                  <button type="button" aria-label="Close" class="close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                   <div class="elements-block">
                     <h2>Basics</h2>
 
@@ -81,12 +96,18 @@
                     </ul>
                   </div>
                 </div>
+                <!-- elements-panel end -->
+
+                <!-- page-creation-area start -->
                 <div class="col-12 col-md-12 col-xl-12"></div>
+                <!-- page-creation-area end -->
               </div>
             </section>
+            <!-- content end -->
 
+            <!-- aside start -->
             <aside id="sidebar" class="col-3 col-md-3 col-xl-2 h-100">
-              <p class="element-name">Element: Section</p>
+              <p class="element-name mb-0">Element: Section</p>
 
               <div class="settings-block">
                 <h2>Settings</h2>
@@ -135,6 +156,7 @@
                 </form>
               </div>
             </aside>
+            <!-- aside start -->
           </div>
         </div>
       </div>
