@@ -1,171 +1,175 @@
 <!doctype html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BetterWeb</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BetterWeb</title>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
-          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    <link href="./build/main.bundle.css" rel="stylesheet">
-  </head>
-  <body>
-    <div id="wrapper" class="container-fluid">
-      <div class="row flex-xl-nowrap h-100">
-        <!-- side-menu start -->
-        <div class="side-menu">
-          <div class="logo"><a href="#">BetterWeb logo</a></div>
-          <button type="button" aria-label="Toggle" class="elements-panel-toggle">+</button>
-        </div>
-        <!-- side-menu end -->
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+        integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link href="./build/main.bundle.css" rel="stylesheet">
+</head>
+<body>
+  <div id="wrapper" class="container-fluid">
+    <div class="row flex-nowrap h-100">
+      <!-- left-panel start -->
+      <aside class="left-panel">
+        <div class="logo"><a href="#">BetterWeb logo</a></div>
+        <button type="button" aria-label="Toggle" class="elements-panel-toggle">+</button>
+      </aside>
+      <!-- left-panel end -->
 
-        <div class="container-fluid">
-          <div class="row flex-nowrap h-100">
-            <!-- content start -->
-            <section id="content" class="col-9 col-md-9 col-xl-10 h-100">
-              <!-- top-bar start -->
-              <div class="top-bar d-flex justify-content-between align-items-center">
-                <div class="d-flex justify-content-start align-items-center">
-                  <p class="page-name mb-0">Page: page name</p>
-                  <div class="actions ml-3">
-                    <button type="button" aria-label="Step back" class="step-back text-hide">Step back</button>
-                    <button type="button" aria-label="Step forward" class="step-forward text-hide">Step forward</button>
-                  </div>
-                </div>
-
-                <div class="">
-                  <div class="screen-types">
-                    <button type="button" role="button" class="active">
-                      <img src="./images/android-desktop.svg" alt="desktop view">
-                    </button>
-                    <button type="button" role="button">
-                      <img src="./images/ipad.svg" alt="tablet view">
-                    </button>
-                    <button type="button" role="button">
-                      <img src="./images/android-phone-landscape.svg" alt="landscape view">
-                    </button>
-                    <button type="button" role="button">
-                      <img src="./images/android-phone-portrait.svg" alt="portrait view">
-                    </button>
-                  </div>
-                </div>
-
-                <div class="">
-                  <div class="options">
-                    <button type="button" aria-label="Preview" class="btn">Preview</button>
-                    <button type="button" aria-label="Export" class="btn">Export</button>
-                    <button type="button" aria-label="Publish" class="btn">Publish</button>
-                  </div>
+      <div class="container-fluid">
+        <div class="row flex-nowrap h-100">
+          <!-- content start -->
+          <section id="content" class="col-9 col-md-9 col-xl-10 h-100">
+            <!-- top-bar start -->
+            <div class="top-bar d-flex justify-content-between align-items-center">
+              <div class="d-flex justify-content-start align-items-center">
+                <p class="page-name mb-0">Page: page name</p>
+                <div class="actions ml-3">
+                  <button type="button" aria-label="Step back" class="step-back text-hide">Step back</button>
+                  <button type="button" aria-label="Step forward" class="step-forward text-hide">Step forward</button>
                 </div>
               </div>
-              <!-- top-bar end -->
 
-              <div class="row flex-nowrap">
-                <!-- elements-panel start -->
-                <div class="col-3 col-md-3 col-xl-2 elements-panel">
-                  <button type="button" aria-label="Close" class="close">
-                    <span aria-hidden="true">&times;</span>
+              <div class="">
+                <div class="screen-types">
+                  <button type="button" role="button" class="active">
+                    <img src="./images/android-desktop.svg" alt="desktop view">
                   </button>
-                  <div class="elements-block">
-                    <h2>Basics</h2>
-
-                    <ul class="elements-list">
-                      <li><a href="#">Section</a></li>
-                      <li><a href="#">Columns</a></li>
-                      <li><a href="#">Div</a></li>
-                      <li><a href="#">Button</a></li>
-                      <li><a href="#">Heading</a></li>
-                      <li><a href="#">Text Block</a></li>
-                      <li><a href="#">Link</a></li>
-                    </ul>
-                  </div>
-
-                  <div class="elements-block">
-                    <h2>Components</h2>
-
-                    <ul class="elements-list">
-                      <li><a href="#">Form</a></li>
-                      <li><a href="#">Input</a></li>
-                      <li><a href="#">Autocomplete</a></li>
-                      <li><a href="#">Datepicker</a></li>
-                      <li><a href="#">Dropdown</a></li>
-                      <li><a href="#">Submit Button</a></li>
-                    </ul>
-                  </div>
+                  <button type="button" role="button">
+                    <img src="./images/ipad.svg" alt="tablet view">
+                  </button>
+                  <button type="button" role="button">
+                    <img src="./images/android-phone-landscape.svg" alt="landscape view">
+                  </button>
+                  <button type="button" role="button">
+                    <img src="./images/android-phone-portrait.svg" alt="portrait view">
+                  </button>
                 </div>
-                <!-- elements-panel end -->
-
-                <!-- page-creation-area start -->
-                <div class="col-12 col-md-12 col-xl-12"></div>
-                <!-- page-creation-area end -->
               </div>
-            </section>
-            <!-- content end -->
 
-            <!-- aside start -->
-            <aside id="sidebar" class="col-3 col-md-3 col-xl-2 h-100">
-              <p class="element-name mb-0">Element: Section</p>
+              <div class="">
+                <div class="options">
+                  <button type="button" aria-label="Preview" class="btn">Preview</button>
+                  <button type="button" aria-label="Export" class="btn">Export</button>
+                  <button type="button" aria-label="Publish" class="btn">Publish</button>
+                </div>
+              </div>
+            </div>
+            <!-- top-bar end -->
 
-              <div class="settings-block">
-                <h2>Settings</h2>
+            <div class="row flex-nowrap">
+              <!-- elements-panel start -->
+              <div class="col-3 col-md-3 col-xl-2 elements-panel">
+                <button type="button" aria-label="Close" class="close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="elements-block">
+                  <h2>Basics</h2>
 
-                <form action="#" class="element-settings">
-                  <row>
-                    <label for="element-width">Width:</label>
-                    <select name="element-width" id="element-width"></select>
-                  </row>
-                  <row>
-                    <label for="element-id"></label>
-                    <input type="text" id="element-id">
-                  </row>
+                  <ul class="elements-list">
+                    <li><a href="#">Section</a></li>
+                    <li><a href="#">Columns</a></li>
+                    <li><a href="#">Div</a></li>
+                    <li><a href="#">Button</a></li>
+                    <li><a href="#">Heading</a></li>
+                    <li><a href="#">Text Block</a></li>
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div>
+
+                <div class="elements-block">
+                  <h2>Components</h2>
+
+                  <ul class="elements-list">
+                    <li><a href="#">Form</a></li>
+                    <li><a href="#">Input</a></li>
+                    <li><a href="#">Autocomplete</a></li>
+                    <li><a href="#">Datepicker</a></li>
+                    <li><a href="#">Dropdown</a></li>
+                    <li><a href="#">Submit Button</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- elements-panel end -->
+
+              <!-- page-creation-area start -->
+              <div class="col-12 col-md-12 col-xl-12"></div>
+              <!-- page-creation-area end -->
+            </div>
+          </section>
+          <!-- content end -->
+
+          <!-- aside start -->
+          <aside id="sidebar" class="col-3 col-md-3 col-xl-2 h-100">
+            <p class="element-name mb-0">Element: Section</p>
+
+            <div class="settings-block">
+              <p class="empty-block-text">Select element on the canvas to activate this panel</p>
+            </div>
+
+            <div class="settings-block">
+              <h2>Settings</h2>
+
+              <form action="#" class="element-settings">
+                <div class="row">
+                  <label for="element-width" class="col-5 col-md-5">Width:</label>
+                  <select name="element-width" id="element-width"  class="col-7 col-md-7"></select>
+                </div>
+                <div class="row">
+                  <label for="element-id" class="col-5 col-md-5">ID:</label>
+                  <input type="text" id="element-id" class="col-5 col-md-5">
+                </div>
+              </form>
+            </div>
+
+            <div class="settings-block">
+              <div class="top-panel">
+                <form action="#">
+                  <label for="element-class">Class:</label>
+                  <input type="text" name="element-class" id="element-class" value=".section-1">
                 </form>
               </div>
-
-              <div class="settings-block">
-                <div class="top-panel">
-                  <form action="#">
-                    <label for="element-class">Class:</label>
-                    <input type="text" name="element-class" id="element-class" value=".section-1">
-                  </form>
+              <h2>Basic styles</h2>
+              <form action="#" class="element-settings">
+                <div class="row">
+                  <label for="element-paddings">Paddings:</label>
+                  <input type="text" id="element-paddings">
                 </div>
-                <h2>Basic styles</h2>
-                <form action="#" class="element-settings">
-                  <row>
-                    <label for="element-paddings">Paddings:</label>
-                    <input type="text" id="element-paddings">
-                  </row>
-                  <row>
-                    <label for="element-margins">Margins:</label>
-                    <input type="text" id="element-margins">
-                  </row>
-                  <row>
-                    <label for="element-bg-color">BG color</label>
-                    <input type="text" id="element-bg-color">
-                  </row>
-                  <row>
-                    <label for="element-bg-image">BG image</label>
-                    <input type="text" id="element-bg-image">
-                  </row>
-                  <row>
-                    <label for="element-alignment">Alignment:</label>
-                    <select name="element-alignment" id="element-alignment"></select>
-                  </row>
-                </form>
-              </div>
-            </aside>
-            <!-- aside start -->
-          </div>
+                <div class="row">
+                  <label for="element-margins">Margins:</label>
+                  <input type="text" id="element-margins">
+                </div>
+                <div class="row">
+                  <label for="element-bg-color">BG color</label>
+                  <input type="text" id="element-bg-color">
+                </div>
+                <div class="row">
+                  <label for="element-bg-image">BG image</label>
+                  <input type="text" id="element-bg-image">
+                </div>
+                <div class="row">
+                  <label for="element-alignment">Alignment:</label>
+                  <select name="element-alignment" id="element-alignment"></select>
+                </div>
+              </form>
+            </div>
+          </aside>
+          <!-- aside start -->
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- scripts -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    <script src="./build/main.bundle.js"></script>
-  </body>
+  <!-- scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <script src="./build/main.bundle.js"></script>
+</body>
 </html>
