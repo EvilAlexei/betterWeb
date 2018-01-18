@@ -5,22 +5,4 @@
   .element-name {
     line-height: $top-bar-height;
   }
-
-  .empty-block-text {
-    margin: 0;
-    padding: 15px 0;
-  }
-  /* settings-block */
-  .settings-block {
-    padding: 15px;
-    background-color: lightgrey;
-    margin-bottom: 10px;
-
-    h2 {
-      text-transform: uppercase;
-      color: $dark-text;
-      font-size: 14px;
-      font-weight: normal;
-    }
-  }
 }

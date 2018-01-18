@@ -4,7 +4,6 @@
   "description": "Markup for betterWeb",
   "scripts": {
     "start:dev": "webpack-dev-server --config ./configs/webpack.config.js",
-    //"svgo": "svgo -f ./app/images/svg-src -o ./app/images/svg-dist",
     "webpack": "webpack --config ./configs/webpack.config.js",
     "webpack:watch": "webpack --watch --config ./configs/webpack.config.js"
   },

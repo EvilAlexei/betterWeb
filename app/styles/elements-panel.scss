@@ -1,0 +1,17 @@
+/* elements-panel */
+.elements-panel {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  border-right: 1px solid $border-color;
+  padding-top: 20px;
+  z-index: 1;
+  overflow: auto;
+
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+}

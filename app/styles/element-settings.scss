@@ -1,0 +1,69 @@
+/* element-settings */
+.element-settings {
+  padding: $settings-block-padding;
+  background-color: lightgrey;
+  margin-bottom: 10px;
+
+  .empty-block-text {
+    margin: 0;
+    padding: 15px 0;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    color: $dark-text;
+    font-size: 14px;
+    font-weight: normal;
+    position: relative;
+    cursor: pointer;
+
+    &.opened:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: -1px;
+      background: url("../images/chevron-down.svg") no-repeat;
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px;
+    }
+    &.closed:after {
+      background: url("../images/chevron-up.svg") no-repeat;
+      background-size: 20px 20px;
+    }
+  }
+
+  .element-attributes {
+    margin-top: -$settings-block-padding;
+    margin-left: -$settings-block-padding;
+    margin-right: -$settings-block-padding;
+    margin-bottom: $settings-block-padding;
+    padding: $settings-block-padding;
+    background: darkgray;
+  }
+
+  & .row {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  label {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  select {
+    display: block;
+    width: 100%;
+    height: $settings-block-row-height;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    height: $settings-block-row-height;
+    font-size: 12px;
+  }
+}

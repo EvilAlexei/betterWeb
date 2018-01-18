@@ -1,6 +1,8 @@
 /* top-bar */
 .top-bar {
   height: $top-bar-height;
+  margin: 0 -15px;
+  padding: 0 15px;
   border-bottom: 1px solid $border-color;
 }
 .step-back {

@@ -1,0 +1,5 @@
+/* content */
+.content {
+  min-height: calc(100% - #{$top-bar-height});
+  background: #f2f2f2;
+}
