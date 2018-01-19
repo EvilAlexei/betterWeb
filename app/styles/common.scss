@@ -1,3 +1,13 @@
+/* common */
+html,
+body {
+  height: 100%;
+}
 #wrapper {
-  height: 100vh;
+  min-width: 998px;
+  height: 100%;
+
+  & > div:first-child {
+    min-height: 100%;
+  }
 }

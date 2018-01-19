@@ -34,9 +34,20 @@ module.exports = {
         use: {
           loader: 'svg-url-loader'
         }
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192
+            }
+          }
+        ]
       }
     ],
-    loaders: []
+    loaders: [ ]
   },
   plugins: [
     new CleanWebpackPlugin(pathsToClean, cleanOptions),

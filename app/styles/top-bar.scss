@@ -1,0 +1,62 @@
+/* top-bar */
+.top-bar {
+  height: $top-bar-height;
+  margin: 0 -15px;
+  padding: 0 15px;
+  border-bottom: 1px solid $border-color;
+}
+.step-back {
+  background: $btn-bg url("../images/arrow-left-c.svg") no-repeat 50% 50%;
+}
+.step-forward {
+  background: $btn-bg url("../images/arrow-right-c.svg") no-repeat 50% 50%;
+}
+.step-back,
+.step-forward {
+  height: 30px;
+  width: 30px;
+  background-size: 20px auto;
+  opacity: 0.5;
+  transition: opacity $animation-time linear;
+  outline: none;
+  border-radius: .25rem;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+  &:focus {
+    outline: none;
+  }
+  &.disabled,
+  &[disabled] {
+    opacity: 0.5 !important;
+    cursor: default !important;
+  }
+}
+
+.screen-types {
+  button {
+    border: none;
+    background: none;
+    padding: 0;
+    opacity: 0.5;
+    transition: opacity $animation-time linear;
+    cursor: pointer;
+
+    &:hover,
+    &.active {
+      opacity: 1;
+    }
+    &.disabled,
+    &[disabled] {
+      opacity: 0.5 !important;
+      cursor: default !important;
+    }
+
+    img {
+      max-width: 32px;
+      max-height: 32px;
+    }
+  }
+}
