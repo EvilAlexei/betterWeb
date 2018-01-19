@@ -1,6 +1,6 @@
 /* elements-panel */
 .elements-panel {
-  left: 0;
+  left: -20%;
   top: 0;
   bottom: 0;
   background: #fff;
@@ -8,10 +8,15 @@
   padding-top: 20px;
   z-index: 1;
   overflow: auto;
+  transition: left $animation-time linear;
 
   .close {
     position: absolute;
     right: 10px;
     top: 10px;
+  }
+
+  &.opened {
+    left: 0;
   }
 }

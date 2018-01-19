@@ -25,7 +25,7 @@
       <div class="container-fluid">
         <div class="row flex-nowrap h-100">
           <!-- content start -->
-          <section id="main" class="col-9 col-md-9 col-xl-10">
+          <section id="main" class="col-9 col-lg-9">
             <!-- top-bar start -->
             <div class="top-bar d-flex justify-content-between align-items-center">
               <div class="d-flex justify-content-start align-items-center">
@@ -52,9 +52,9 @@
               </div>
 
               <div class="options">
-                <button type="button" aria-label="Preview" class="btn">Preview</button>
-                <button type="button" aria-label="Export" class="btn">Export</button>
-                <button type="button" aria-label="Publish" class="btn">Publish</button>
+                <button type="button" aria-label="Preview" class="btn btn-secondary">Preview</button>
+                <button type="button" aria-label="Export" class="btn btn-secondary">Export</button>
+                <button type="button" aria-label="Publish" class="btn btn-secondary">Publish</button>
               </div>
             </div>
             <!-- top-bar end -->
@@ -69,13 +69,13 @@
                   <h2>Basics</h2>
 
                   <ul class="elements-list">
-                    <li><a id="drag1" href="#" draggable="true" ondragstart="drag(event)">Section</a></li>
-                    <li><a href="#" draggable="true" ondragstart="drag(event)">Columns</a></li>
-                    <li><a href="#" draggable="true" ondragstart="drag(event)">Div</a></li>
-                    <li><a href="#" draggable="true" ondragstart="drag(event)">Button</a></li>
-                    <li><a href="#" draggable="true" ondragstart="drag(event)">Heading</a></li>
-                    <li><a href="#" draggable="true" ondragstart="drag(event)">Text Block</a></li>
-                    <li><a href="#" draggable="true" ondragstart="drag(event)">Link</a></li>
+                    <li><a href="#">Section</a></li>
+                    <li><a href="#">Columns</a></li>
+                    <li><a href="#">Div</a></li>
+                    <li><a href="#">Button</a></li>
+                    <li><a href="#">Heading</a></li>
+                    <li><a href="#">Text Block</a></li>
+                    <li><a href="#">Link</a></li>
                   </ul>
                 </div>
 
@@ -83,28 +83,31 @@
                   <h2>Components</h2>
 
                   <ul class="elements-list">
-                    <li><a href="#" draggable="true" ondragstart="drag(event)">Container</a></li>
-                    <li><a href="#" draggable="true" ondragstart="drag(event)">Form</a></li>
-                    <li><a href="#" draggable="true" ondragstart="drag(event)">Input</a></li>
-                    <li><a href="#" draggable="true" ondragstart="drag(event)">Autocomplete</a></li>
-                    <li><a href="#" draggable="true" ondragstart="drag(event)">Datepicker</a></li>
-                    <li><a href="#" draggable="true" ondragstart="drag(event)">Dropdown</a></li>
-                    <li><a href="#" draggable="true" ondragstart="drag(event)">Submit Button</a></li>
+                    <li><a href="#">Container</a></li>
+                    <li><a href="#">Form</a></li>
+                    <li><a href="#">Input</a></li>
+                    <li><a href="#">Autocomplete</a></li>
+                    <li><a href="#">Datepicker</a></li>
+                    <li><a href="#">Dropdown</a></li>
+                    <li><a href="#">Submit Button</a></li>
                   </ul>
                 </div>
               </div>
               <!-- elements-panel end -->
 
               <!-- page-creation-area start -->
-              <div class="col-12 col-md-12 col-xl-12" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+              <div class="col-12 col-md-12 col-xl-12"></div>
               <!-- page-creation-area end -->
             </div>
           </section>
           <!-- content end -->
 
           <!-- aside start -->
-          <aside id="sidebar" class="col-3 col-md-3 col-xl-2 h-100">
-            <p class="element-name mb-0">Element: Section</p>
+          <aside id="sidebar" class="col-3 col-lg-3 h-100">
+            <div class="d-flex justify-content-between align-items-center" style="height: 60px;">
+              <p class="element-name mb-0">Element: Section</p>
+              <button type="button" aria-label="Goto parent element" class="btn btn-secondary">Level Up</button>
+            </div>
 
             <!-- settings form -->
             <form class="element-settings">
@@ -114,7 +117,8 @@
 
             <!-- settings form -->
             <form class="element-settings">
-              <h2 class="opened">Settings</h2>
+              <h2 class="opener closed">Settings</h2>
+              <!-- holder -->
               <div class="holder">
                 <div class="row">
                   <div class="col-5 col-md-5 d-flex align-items-center">
@@ -124,7 +128,16 @@
                     <input type="text" id="element-id">
                   </div>
                 </div>
+                <div class="row">
+                  <div class="col-3 col-md-3 d-flex align-items-top">
+                    <label for="element-values">Array:</label>
+                  </div>
+                  <div class="col-9 col-md-9 d-flex align-items-center">
+                    <textarea name="element-values" id="element-values"></textarea>
+                  </div>
+                </div>
               </div>
+              <!-- holder end -->
             </form>
             <!-- settings form end -->
 
@@ -140,65 +153,134 @@
                   </div>
                 </div>
               </div>
-              <h2 class="opened">Basic styles</h2>
+              <h2 class="opener closed">Basic styles</h2>
+              <!-- holder -->
               <div class="holder">
-                <div class="row">
-                  <div class="col-5 col-md-5 d-flex align-items-center">
-                    <label for="element-width">Width:</label>
+                <fieldset>
+                  <h3 class="sub-category">Layout</h3>
+                  <div class="row">
+                    <div class="col-5 col-md-5 d-flex align-items-center">
+                      <label for="element-width">Width:</label>
+                    </div>
+                    <div class="col-7 col-md-7 d-flex align-items-center">
+                      <input type="text" id="element-width">
+                    </div>
                   </div>
-                  <div class="col-7 col-md-7 d-flex align-items-center">
-                    <input type="text" id="element-width">
+                  <div class="row">
+                    <div class="col-5 col-md-5 d-flex align-items-center">
+                      <label for="element-height">Height:</label>
+                    </div>
+                    <div class="col-7 col-md-7 d-flex align-items-center">
+                      <input type="text" id="element-height">
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-5 col-md-5 d-flex align-items-center">
-                    <label for="element-height">Height:</label>
+                  <div class="row">
+                    <div class="col-5 col-md-5 d-flex align-items-center">
+                      <label for="element-paddings">Paddings:</label>
+                    </div>
+                    <div class="col-7 col-md-7 d-flex align-items-center">
+                      <input type="text" id="element-paddings">
+                    </div>
                   </div>
-                  <div class="col-7 col-md-7 d-flex align-items-center">
-                    <input type="text" id="element-height">
+                  <div class="row">
+                    <div class="col-5 col-md-5 d-flex align-items-center">
+                      <label for="element-margins">Margins:</label>
+                    </div>
+                    <div class="col-7 col-md-7 d-flex align-items-center">
+                      <input type="text" id="element-margins">
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-5 col-md-5 d-flex align-items-center">
-                    <label for="element-paddings">Paddings:</label>
+                </fieldset>
+
+                <fieldset>
+                  <h3 class="sub-category">Typography</h3>
+                  <div class="row">
+                    <div class="col-5 col-md-5 d-flex align-items-center">
+                      <label for="element-font-color">Color:</label>
+                    </div>
+                    <div class="col-7 col-md-7 d-flex align-items-center">
+                      <input type="text" id="element-font-color">
+                    </div>
                   </div>
-                  <div class="col-7 col-md-7 d-flex align-items-center">
-                    <input type="text" id="element-paddings">
+                  <div class="row">
+                    <div class="col-5 col-md-5 d-flex align-items-center">
+                      <label for="element-font-size">Font size:</label>
+                    </div>
+                    <div class="col-7 col-md-7 d-flex align-items-center">
+                      <input type="text" id="element-font-size">
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-5 col-md-5 d-flex align-items-center">
-                    <label for="element-margins">Margins:</label>
+                  <div class="row">
+                    <div class="col-5 col-md-5 d-flex align-items-center">
+                      <label for="element-font-line-height">Line height:</label>
+                    </div>
+                    <div class="col-7 col-md-7 d-flex align-items-center">
+                      <input type="text" id="element-font-line-height">
+                    </div>
                   </div>
-                  <div class="col-7 col-md-7 d-flex align-items-center">
-                    <input type="text" id="element-margins">
+                  <div class="row">
+                    <div class="col-5 col-md-5 d-flex align-items-center">
+                      <label for="element-alignment">Alignment:</label>
+                    </div>
+                    <div class="col-7 col-md-7 d-flex align-items-center">
+                      <select name="element-alignment" id="element-alignment"></select>
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-5 col-md-5 d-flex align-items-center">
-                    <label for="element-bg-color">BG color</label>
+                  <div class="row">
+                    <div class="col-5 col-md-5 d-flex align-items-center">
+                      <label for="element-font-weight">Font weight:</label>
+                    </div>
+                    <div class="col-7 col-md-7 d-flex align-items-center">
+                      <input type="text" id="element-font-weight">
+                    </div>
                   </div>
-                  <div class="col-7 col-md-7 d-flex align-items-center">
-                    <input type="text" id="element-bg-color">
+                  <div class="row">
+                    <div class="col-5 col-md-5 d-flex align-items-center">
+                      <label for="element-text-transform">Text transform:</label>
+                    </div>
+                    <div class="col-7 col-md-7 d-flex align-items-center">
+                      <select name="element-text-transform" id="element-text-transform"></select>
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-5 col-md-5 d-flex align-items-center">
-                    <label for="element-bg-image">BG image</label>
+                </fieldset>
+
+                <fieldset>
+                  <h3 class="sub-category">Background</h3>
+                  <div class="row">
+                    <div class="col-5 col-md-5 d-flex align-items-center">
+                      <label for="element-bg-color">BG color</label>
+                    </div>
+                    <div class="col-7 col-md-7 d-flex align-items-center">
+                      <input type="text" id="element-bg-color">
+                    </div>
                   </div>
-                  <div class="col-7 col-md-7 d-flex align-items-center">
-                    <input type="text" id="element-bg-image">
+                  <div class="row">
+                    <div class="col-5 col-md-5 d-flex align-items-center">
+                      <label for="element-bg-image">BG image</label>
+                    </div>
+                    <div class="col-7 col-md-7 d-flex align-items-center">
+                      <input type="text" id="element-bg-image">
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-5 col-md-5 d-flex align-items-center">
-                    <label for="element-alignment">Alignment:</label>
+                  <div class="row">
+                    <div class="col-5 col-md-5 d-flex align-items-center">
+                      <label for="element-bg-size">BG size</label>
+                    </div>
+                    <div class="col-7 col-md-7 d-flex align-items-center">
+                      <input type="text" id="element-bg-size">
+                    </div>
                   </div>
-                  <div class="col-7 col-md-7 d-flex align-items-center">
-                    <select name="element-alignment" id="element-alignment"></select>
+                  <div class="row">
+                    <div class="col-5 col-md-5 d-flex align-items-center">
+                      <label for="element-bg-position">BG position</label>
+                    </div>
+                    <div class="col-7 col-md-7 d-flex align-items-center">
+                      <input type="text" id="element-bg-position">
+                    </div>
                   </div>
-                </div>
+                </fieldset>
               </div>
+              <!-- holder end -->
             </form>
             <!-- settings form end -->
           </aside>
@@ -207,22 +289,6 @@
       </div>
     </div>
   </div>
-
-  <script>
-    function allowDrop(ev) {
-      ev.preventDefault();
-    }
-
-    function drag(ev) {
-      ev.dataTransfer.setData("text", ev.target.id);
-    }
-
-    function drop(ev) {
-      ev.preventDefault();
-      var data = ev.dataTransfer.getData("text");
-      ev.target.appendChild(document.getElementById(data));
-    }
-  </script>
 
   <!-- scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
